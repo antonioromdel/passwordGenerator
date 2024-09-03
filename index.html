@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Contraseña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <main class="layaout">
+        <section class="notify">
+            <img class="notify__imagen" src="img/marca.png" alt="copied">
+            <p class="notify__p">¡Contraseña copiada!</p>
+        </section>
+
+        <section class="layaout__section">
+
+            <div class="section__info">
+                <h3 class="info__title">Contraseña</h3>
+                <svg class="info__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                </svg>                  
+            </div>
+
+            <form action="" class="section__form">
+
+                <div class="form__range">
+                    <p class="range__parrafo">Longitud</p>
+                    <p class="range__value">5</p>
+                </div>
+
+                <input class="range__input" type="range" value="4" min="5" max="18">
+
+                <div class="form__checks">
+                    <input type="checkbox" name="minus" id="minusculas">
+                    <label for="minusculas">Con letras en minúsculas</label>
+                </div>
+                <div class="form__checks">
+                    <input type="checkbox" name="mayus" id="mayusculas">
+                    <label for="mayusculas">Con letras en mayúscula</label>
+                </div>
+                <div class="form__checks">
+                    <input type="checkbox" name="number" id="number">
+                    <label for="number">Con números</label>
+                </div>
+                <div class="form__checks">
+                    <input type="checkbox" name="symbol" id="symbol">
+                    <label for="symbol">Con símbolos</label>
+                </div>
+                
+                <div class="form__btn">
+                    <button class="form__btn-boton">CREAR</button>
+                </div>
+                
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
